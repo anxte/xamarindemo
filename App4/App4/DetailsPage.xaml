@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.Page1"
+             Padding="60">
+  <Label Text="add a place" VerticalOptions="Center" HorizontalOptions="Center" />
+
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="320" />
+      <ColumnDefinition Width="120" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="50"/>
+      <RowDefinition Height="50"/>
+      <RowDefinition Height="50"/>
+      <RowDefinition Height="40"/>
+    </Grid.RowDefinitions>
+
+    <Entry Placeholder="name" 
+           Grid.Column="0" 
+           Grid.Row="0"
+           Grid.ColumnSpan="2"></Entry>
+    <Entry Placeholder="adress, coordinates" 
+           Grid.Column="0" 
+           Grid.Row="1" ></Entry>
+    <Button Text="GPS"
+            BackgroundColor="Gray"
+            Grid.Column="1"
+            Grid.Row="1"></Button>
+    <Button Text="add photo"
+            BackgroundColor="Gray"
+            Grid.Column="0"
+            Grid.Row="2"></Button>
+    <Button Text="add"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            BackgroundColor="Gray"
+            Clicked="Button_OnClicked3"
+            Grid.Column="0"
+            Grid.Row="3"></Button>
+  </Grid>
+
+</ContentPage>
+
